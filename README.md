@@ -1,7 +1,7 @@
 # sample_ec2_webapp
 Repository holds terraform code along with EC2 user data script to deploy a sample web application to AWS.
 
-"Terraform Apply" command creates an EC2 instance in a VPC and applies the user data script upon initial EC2 server startup. Bash script configures and installs the application. Terraform at the end of the command "Terraform Apply" command provides address of your working web application. Application URL will be accessible once the EC2 instance is available and passes the health checks
+"Terraform Apply" command creates an EC2 instance in a VPC and applies the user data script upon initial EC2 server startup. Bash script configures and installs the application. Terraform at the end of the command "Terraform Apply" command provides address of your working web application. Application URL will be accessible once the EC2 instance is available and passes the health checks. Application Port: 3001. URL http://{external_ip}:3001
 
 Terraform Apply command expects a source_cidr range which is usually the external IP address of the machine accessing the web application. (e.g. "54.153.127.175/32"). This is used to restrict the traffic from  that IP address alone.
 
